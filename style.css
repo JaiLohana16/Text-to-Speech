@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(29, 29, 69),rgb(93, 42, 93));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: white;
+}
+h1 span{
+    color: #ff2963;
+}
+textarea{
+    resize: none;
+    width: 600px;
+    height: 300px;
+    background: #403d84;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    /* justify-content: center; */
+    gap: 20px;
+}
+button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    gap:5px;
+}
+button img{
+    width: 16px;
+}
+select{
+    flex: 1;
+    /* width: 100px; */
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(dropdown.png);  
+    /*by default there is an dropdown given as we have alwasy seen but it is smaller in height width so we have added our own image and have hideen that orignal dropdown and have placed our img exactly over the orignal dropdown position so that on clicking that image it does the orignal working*/
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y:20px ;
+    background-size: 15px;
+}
